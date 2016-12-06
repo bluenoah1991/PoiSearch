@@ -6,7 +6,7 @@ var app = koa();
 
 var ESProxy = require('./lib/ESProxy').default;
 
-var proxy = new ESProxy('http://192.168.102.73:9200', 'poi_search_test');
+var proxy = new ESProxy('http://localhost:9200', 'point');
 
 function setError(ctx, err, status){
     ctx.response.status = status || 400;

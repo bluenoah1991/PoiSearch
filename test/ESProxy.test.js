@@ -3,7 +3,7 @@ var assert = require('chai').assert;
 var ESProxy = require('../lib/ESProxy').default;
 var Projection = require('../lib/Projection').default;
 
-var host = '192.168.102.73:9200';
+var host = 'localhost:9200';
 
 var ESHelper = (require('./ESHelper'))(host);
 
